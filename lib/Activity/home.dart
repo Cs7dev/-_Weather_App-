@@ -43,6 +43,9 @@ class _HomeState extends State<Home> {
     
     Map? info = ModalRoute.of(context)?.settings.arguments as Map?;
     String temp =((info!['temp_value']).toString()).substring(0,2);
+    if(temp == "NA"){
+      print("NA");
+    }
     String icon = info!['icon_value'];
     String getcity = info!['city_value'];
     String humid = info!['humid_value'];
@@ -110,7 +113,7 @@ class _HomeState extends State<Home> {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        if(searchController.text == "")
+                        if((searchController.text).replaceAll(" ", "") == "")
                         {
                           print("Black Search");
                         }else{
