@@ -1,4 +1,4 @@
-# ऋतु Weather App 
+# ऋतु Weather App & Website
 
 
 Live Implementation of the app. 
