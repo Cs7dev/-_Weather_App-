@@ -162,9 +162,11 @@ class _HomeState extends State<Home> {
                           ])
 
                       ),
+
                       margin: EdgeInsets.symmetric(horizontal: 27),
                       padding: EdgeInsets.all(10),
-                      child: Row(
+                      child:
+                      Row(
                         children: [
                           Image.network("https://openweathermap.org/img/wn/$icon@2x.png"),
                           SizedBox(width: 20,),
